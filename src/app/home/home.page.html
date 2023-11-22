@@ -1,0 +1,26 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Jogo 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-text-center">
+  <ion-header collapse="condense">
+    <ion-toolbar >
+    
+    </ion-toolbar>
+  </ion-header>
+  <h1 class="titulo">Jogo da Velha</h1>
+
+  <div class="board">
+    <div *ngFor="let cell of cells;let i=index" (click)="makeMove(i)">{{cell}}</div>
+  </div>
+  <ion-button expand="block" (click)="reset()">Reiniciar Partida</ion-button>
+
+
+  
+
+</ion-content>
